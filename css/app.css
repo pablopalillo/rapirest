@@ -1,3 +1,8 @@
+@font-face {
+    font-family: dragon;
+    src: url("Dragon is coming.otf");
+}
+
 .imput-rapi
 {
   width: 100px;
@@ -14,7 +19,18 @@
   font-size: 25px;
 }
 
+#main
+{
+  margin-top: 10%;
+}
+
 .header-title
 {
   text-align: center;
+}
+
+.header-title .header-title-cursive
+{
+  font-family: "dragon";
+  font-size: 60px;
 }
