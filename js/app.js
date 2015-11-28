@@ -6,7 +6,7 @@ $(document).ready(function(){
       
       if(field.length > 0)
       {
-          var url = "/jogo/rest/product/getSearchProduct?code="+field;
+          var url = "/jogo/rest/product/getSearchProduct?codigo="+field;
       }
       else
       {
