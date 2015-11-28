@@ -1,10 +1,21 @@
 $(document).ready(function(){
     $("#search").click(function(){
       $("#table-1 tbody").html("");
+      
+      var field = $(".imput-rapi").val();
+      
+      if(field.length > 0)
+      {
+          var url = "/jogo/rest/product/getSearchProduct?code="+field;
+      }
+      else
+      {
+          var url = "/jogo/rest/product/getAllProducts";
+      }
 
        $.ajax({
         method: "GET",
-        url: "/jogo/rest/product/getallproducts",
+        url: url,
         dataType: "json",
         beforeSend: function(){
                       $("#search").attr("class","disabled button imput-rapi-button");
